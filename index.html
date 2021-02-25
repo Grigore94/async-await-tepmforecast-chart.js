@@ -13,6 +13,9 @@
             const res = await fetch("data.csv");
             const data = await res.text();
             console.log(data);
+
+            const rows = data.split(/\n/).slice(1);
+            console.log(rows);
         }
     </script>
 </body>
